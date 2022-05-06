@@ -5,3 +5,7 @@ Shivam----->Frontpage,
 Sumit --->Backend ,Footer,Blog.
 Aditya--->
 Saurav---> Cart Section
+<div class="AccordionItem__Content-sc-ilgiiy-1 cIvozg content" style="height: auto;"> If you have a routine for your face, you are probably halfway there. A luxurious body care routine involves exfoliating and cleansing your body with body wash and scrub. Besides, do not forget to Lock in some moisture with a body butter cream.</div>
+<div class="AccordionItem__Content-sc-ilgiiy-1 cIvozg content" style="height: auto;"> Building an effective skin and body care regimen not only enhances your skin but makes you feel beautiful and confident about yourself. Here is how you should get started- Pamper your skin and body with the goodness of nature. Eat a healthy diet. Get yourself some time to practice yoga or meditation. Manage your stress and take a sound sleep.</div>
+<div class="AccordionItem__Content-sc-ilgiiy-1 cIvozg content" style="height: auto;"> If you want to cultivate a good body care regimen, begin with a body wash. You can also use a gentle scrub twice a week to get rid of dead skin cells. The second step involves hydrating your body with body buttercream or lotion.</div>
+<div class="Flex-sc-1lsr9yp-0 fMuTfN"><div class="titleName"> What products do you need for body care? </div><div class="titleIcon"> <svg width="17.006" height="9.618" viewBox="0 0 17.006 9.618"><path d="M16.348 1.455a.517.517 0 00-.718-.744l-7.1 7.1-7.1-7.1a.513.513 0 10-.718.718l7.46 7.485a.513.513 0 00.718 0z" fill="#00afef" stroke="#00afef"></path></svg> </div></div>
