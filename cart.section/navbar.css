@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.upper-nav > ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(212, 66, 76);
+    color: rgb(255, 255, 255);
+    padding: 5px;
+}
+.upper-nav>ul{
+    list-style-type: none;
+}
+
+.upper-nav>ul>i{
+    font-size: 18px;
+    margin-right: 40px;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-family: 'Lato', sans-serif;
+}
+.upper-nav>ul>li>a:hover{
+    text-decoration-line: underline;
+}
+.nav>img{
+    max-width: 140px;
+   
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-left: 7%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.nav-user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-user>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.cart-user>i{
+    color: rgb(0, 175, 239);
+    margin-right: 5px;
+}
+
+.cart-user>a{
+    color: rgb(92, 92, 92);
+    margin: 0px;
+    font-size: 15px;
+}
+
+.login-user>i{
+    margin-right: 5px;
+    color: rgb(0, 175, 239);
+}
+
+/*   login button hover */
+.btn-login{
+    position: relative;
+    display: inline-block;
+}
+.btn-login a{
+    display: block;
+    color: rgb(92, 92, 92);
+    font-size: 18px;
+    line-height: 30px;
+    
+}
+.user-hover-login{
+    align-items: center;
+    width: 200px;
+    position: absolute;
+    list-style-type: none;
+    top: 20px;
+    right: -50px;
+    border-top: 3px solid rgb(0, 175, 239);
+    padding: 10px 10px;
+    visibility: hidden;
+}
+.btn-login:hover .user-hover-login{
+    display: block;
+}
+.btn-login:hover .user-hover-login{
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 26%) 0px 8px 16px;
+    top: 30px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+
+
+.btn-login:hover .user-hover-login > li{
+    position: relative;
+}
+.user-hover-login>li{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.62;
+    color: rgb(119, 119, 119);
+}
+
+.user-hover-login>li>a:hover{
+    color: rgb(0, 175, 239);
+}
+
+.login-button{
+    background-color: rgb(0, 175, 239);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    border-top: 1px solid rgb(234, 234, 234);
+    text-transform: uppercase;
+    padding: 10px 60px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: -10px;
+    cursor: pointer;
+}
+.btn-login>a{
+    color: rgb(92, 92, 92);
+    margin: 0px;
+    font-size: 15px;
+}
+/* **************************************************************** */
+
+
+.user-search{
+    width: 60%;
+}
+input{
+    width: 70%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    border: .5px solid rgba(152, 152, 152, .5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+input:focus {
+	outline: none;
+  	border: .5px solid rgba(0, 175, 239, .5);
+}
+
+button{
+    background-color: rgb(0, 175, 239);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -10px;
+}
+.user-category{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-left: 7%;
+}
+.user-category> li > a{
+    color: rgb(92, 92, 92);
+    font-weight: 600;
+    margin-left: 3px;
+}
+.user-category> li .active{
+    color: rgb(0, 175, 239);
+    font-weight: 600;
+    margin-left: 3px;
+}
+.user-category-container{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid rgb(234, 234, 234);
+    box-shadow: rgb(0 0 0 / 10%) 0px 3px 6px;
+}
+
+/* sticky Header */
+.sticky {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    visibility: visible;
+    opacity: 4s;
+  }
+  /* ........................ */
+
+.category{
+    
+    display: block;
+    position: relative;
+    visibility: visible;
+
+}
+.category a{
+    display: block;
+    color: white;
+    
+}
+.user-hover-list{
+    position: absolute;
+    top: 20px;
+    border-top: 3px solid rgb(0, 175, 239);
+    padding: 10px 20px;
+    visibility: hidden;
+}
+.category:hover .user-hover-list{
+    display: block;
+}
+.category:hover .user-hover-list{
+    display: flex;
+    align-items: flex-start; 
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 26%) 0px 8px 16px;
+    top: 15px;
+    left: -50px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+}
+
+.category:hover .user-hover-list > div{
+    position: relative;
+}
+.user-hover-list>div{
+    width: 200px;
+    margin-right: -70px;
+}
+.user-hover-list>div>a{
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2;
+    color: rgb(119, 119, 119);
+}
+.user-hover-list>div>p{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: rgb(0, 175, 239);
+}
+.user-hover-list>div>a:hover{
+    color: rgb(0, 175, 239);
+}

@@ -1,0 +1,232 @@
+#container1{
+    /* border:1px solid #777; */
+    width:85%;
+    height:auto;
+    margin: auto;
+    border-width:thin
+}
+#first{
+    /* border: thin 0.5px #777; */
+    height:auto;
+    display:flex;
+    border-width:thin
+
+
+}
+#second{
+    /* border: solid 0.5px #777; */
+    height:130px;
+    display: flex;
+    border-width: thin;
+}
+#third{
+    /* border:  1px #777; */
+    height:400px;
+    display:flex;
+    gap:150px;
+    border-width: thin;
+    
+}
+#fourth{
+    /* border: solid 0.1px #777; */
+    height:80px;
+}
+#fifth {
+    /* border: thin 0.5px #777; */
+    height:50px;
+}
+.shiping{
+     /* border: solid #777 0.5px;  */
+    width: 25%;
+    height:150px;
+    /* margin-top: 20px; */
+    
+}
+.cod{
+    /* border: solid black 1px; */
+    width: 25%;
+    height:98%
+}
+.shiping > img {
+    display: block;
+    margin: auto;
+    width:60px;
+    height:30%;
+    margin-top: 30px;
+}
+.shiping > img + p {
+    text-align: center;
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.cod > img + p{
+    text-align: center;
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+img+p+p {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    color: #777;
+}
+.cash{
+    display: block;
+    margin: auto;
+    width: 60px;
+    margin-top: 20px;
+    height:40%
+}
+.contact{
+    /* border:1px solid black; */
+    width:50%;
+    height:98%
+}
+.contact > p{
+    text-align:center;
+    margin-top: 40px;
+}
+#bb{
+    display: block;
+    margin: auto;
+    background-color: white;
+    color: #00afef;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: #00afef;
+}
+button:hover{
+    background-color: #00afef;
+    color: white;
+}
+.payment{
+    /* border: solid 1px black; */
+    height: 100%;
+    width:50%
+}
+.payment > p{
+    margin-left: 50px;
+}
+p + div {
+    display: block;
+    margin-left: 50px;
+    height:10px;
+    
+}
+.sec{
+    height:30px
+}
+.s {
+    display: flex;
+}
+.s > div + div >p{
+    color: green;
+    margin-top: -0.5px;
+    padding-left: 10px;
+}
+.card > div >img {
+    height:25px
+}
+.card {
+    margin-left:50px ;
+    margin-top: 30px;
+    display: flex;
+    gap:15px
+}
+.certificate {
+    /* border: solid 1px black; */
+    height: 100%;
+    width:50%;
+    display:flex;
+    gap:5px
+}
+.a {
+    height:100%;
+    /* border:1px solid black; */
+    width: 170px;
+}
+.b {
+    height:100%;
+    /* border:1px solid black; */
+    width: 150px;
+}
+.c {
+    height:100%;
+    /* border:1px solid black; */
+    width: 150px;
+}
+.one {
+    height: 30%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+.one + p{
+    text-align: center;
+    color: #777;
+}
+.third>div{
+    /* border: solid 1px black; */
+    width:35%;
+    height:auto
+}
+.useful {
+    margin-left: 50px;
+    margin-top: 20px;
+    /* border: solid 1px black; */
+    
+}
+.useful + div {
+    margin-top: 20px;
+}
+.useful + div + div {
+    margin-top: 20px;
+}
+.award {
+    height:50%;
+    margin-top: 10px;
+    padding-left: 80px;
+}
+#third > div > p {
+    color: #777;
+}
+#third > div > p:hover {
+color: #00afef;
+cursor: pointer;
+}
+.social{
+    /* border:solid 1px black; */
+    width:100%;
+    height:50%
+}
+.media{
+    /* border: 1px solid black; */
+    width:100%;
+    height: 50%;
+    display:flex;
+    gap:20px;
+
+}
+.social > div > p{
+    text-align: center;
+}
+.media > div {
+    text-align: center;
+    /* margin-top: 10px; */
+    display: flex;
+    margin: auto;
+    gap:15px;
+    margin-top: -10px;
+    
+    
+}
+#fifth > p{
+    text-align: center;
+    /* color: #777; */
+}
