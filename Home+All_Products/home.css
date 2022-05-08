@@ -1,0 +1,692 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*   offer slide */
+.offer-image > a > img{
+    margin-top: -15px;
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit:cover;
+    cursor: pointer;
+}
+    /* ******** */
+
+    .product-container{
+        display: flex;
+        margin: auto;
+        width: 90%;
+    }
+    .product-container-view-all{
+        margin-top: 100px;
+        width: 30%;
+        text-align: center;  
+    }
+    .product-container-heading{
+        font-size: 20px;
+        font-weight: 600; 
+        color: rgb(51, 51, 51);   
+        font-family: 'Lato', sans-serif;
+        line-height: 15px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+    .product-container-heading+div{
+        width: 90%;
+        margin: auto;
+    }
+    .product-container-view-all>div>p{
+        font-size: 18px; 
+        color: rgb(51, 51, 51);   
+        font-family: 'Lato', sans-serif;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    .btn-view-all{
+        background-color: rgb(0, 175, 239);
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 5px;
+    }
+    .btn-view-all:hover{
+        color: rgb(0, 175, 239);
+        background-color: white;
+        padding: 15px 30px;
+        border: 1px solid rgb(0, 175, 239);
+        border-radius: 5px;
+    }
+
+
+    /* product */
+    .product-container-content{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+        width: 100%;
+        margin-right: -50px;
+        background-color: rgb(255, 255, 255);     
+      }
+    .product-container-content>div{
+            display:flex;
+            border:.1px solid rgb(221, 217, 217);
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin-right: -50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .product-container-content>div>img{
+        width: auto;
+    }
+    .product-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-container-content>div>h2{
+        font-size: 17px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .product-container-content>div>h3{
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .modal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+        font-family: 'Lato', sans-serif;
+    }
+    .modal+div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .modal+div>h1{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+    }
+ button{
+        background-color: white;
+        color: rgb(0, 175, 239);
+        padding: 10px 15px;
+        border: none;
+        border: 1px solid rgb(0, 175, 239);
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin: 2px;
+        margin-bottom: 2px;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+    }
+    button:hover{
+        background-color: rgb(0, 175, 239);
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border: 1px solid rgb(0, 175, 239);
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        margin: 2px;
+        margin-bottom: 2px;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+    }
+
+    
+    /* ********************************************************************* */
+
+    /* onion range */
+    /* product */
+    .product-container-content1{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+        width: 100%;
+        margin-right: -50px;
+        background-color: rgb(255, 255, 255);     
+      }
+    .product-container-content1>div{
+            display:flex;
+            border:.1px solid rgb(221, 217, 217);
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin-right: -50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .product-container-content1>div>img{
+        width: 100%;
+    }
+    .product-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-container-content1>div>h2{
+        font-size: 17px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .product-container-content1>div>h3{
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* ******** */
+
+    /* vitaminCRange */
+    /* product */
+    .product-container-content2{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+        width: 100%;
+        margin-right: -50px;
+        background-color: rgb(255, 255, 255);     
+      }
+    .product-container-content2>div{
+            display:flex;
+            border:.1px solid rgb(221, 217, 217);
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin-right: -50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .product-container-content2>div>img{
+        width: 100%;
+    }
+    .product-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-container-content2>div>h2{
+        font-size: 17px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .product-container-content2>div>h3{
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* ******** */
+
+        /* ubtanRange */
+    /* product */
+    .product-container-content3{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+        width: 100%;
+        margin-right: -50px;
+        background-color: rgb(255, 255, 255);     
+      }
+    .product-container-content3>div{
+            display:flex;
+            border:.1px solid rgb(221, 217, 217);
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin-right: -50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .product-container-content3>div>img{
+        width: 100%;
+    }
+    .product-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-container-content3>div>h2{
+        font-size: 17px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .product-container-content3>div>h3{
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* ******** */
+
+    /* Hair Care */
+    .product-container-content4{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap:10px;
+        width: 100%;
+        margin-right: -50px;
+        background-color: rgb(255, 255, 255);     
+      }
+    .product-container-content4>div{
+            display:flex;
+            border:.1px solid rgb(221, 217, 217);
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+            margin-right: -50px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .product-container-content4>div>img{
+        width: 100%;
+    }
+    .product-container{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .product-container-content4>div>h2{
+        font-size: 17px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .product-container-content4>div>h3{
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    /* ************* */
+
+
+    /* Promise */
+   .promise{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 80%;
+       margin: auto;
+       margin-top: 30px;
+       margin-bottom: 30px;      
+   }
+
+   .goodness-promise{
+       text-align: center;
+       align-items: center;
+       margin-left: 20px;
+   }
+   .goodness-promise>h1{
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    color: rgb(0, 175, 239);
+    margin-right: 10px;
+    margin-bottom: 10px;
+   }
+   .goodness-promise>p{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin-left: 10px;
+    color: rgb(100, 100, 111);
+    margin-right: 10px;
+    margin-bottom: 10px;
+   }
+
+   iframe{
+       border-radius: 10px;
+   }
+
+/* plant goodness */
+.plant-image{
+    margin-top: -15px;
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit:cover;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.plant-goodness-content>h3{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin-left: 10px;
+    color: rgb(100, 100, 111);
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+/* super safe  */
+.super-safe>p{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    color: rgb(100, 100, 111);
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.super-safe-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.super-safe-container>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.super-safe-container>div>div{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.super-safe-container>div>div>h3{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+.super-safe-container>div>div>p{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: rgb(100, 100, 111);
+    margin-bottom: 10px;
+}
+
+/* Testimonial */
+
+.testimonial-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tst{
+    width: 90%;
+    text-align: center;
+    margin: auto;
+}
+.testimonals{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.testimonial-container>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.testimonals>img{
+    border-radius: 50%;
+    width: 60px;
+    margin-right: 20px;
+}
+.testimonals>div>h2{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    color: black;
+}
+.testimonial-container>div>p{
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    margin-left: 10px;
+    color: rgb(100, 100, 111);
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+
+/* footer */
+#container1{
+    border:1px solid #777;
+    width:85%;
+    height:auto;
+    margin: auto;
+    border-width:thin;
+    margin-top: 70px;
+}
+#first{
+    border: thin 0.5px #777;
+    height:auto;
+    display:flex;
+    border-width:thin
+
+
+}
+#second{
+    border: solid 0.5px #777;
+    height:130px;
+    display: flex;
+    border-width: thin;
+}
+#third{
+    border:  1px #777;
+    height:400px;
+    display:flex;
+    gap:150px;
+    border-width: thin;
+    
+}
+#fourth{
+    border: solid 0.1px #777;
+    height:80px;
+}
+#fifth {
+    border: thin 0.5px #777;
+    height:50px;
+}
+.shiping{
+     border: solid #777 0.5px; 
+    width: 25%;
+    height:150px;
+    text-align: center;
+    
+}
+.cod{
+    /* border: solid black 1px; */
+    width: 25%;
+    height:98%;
+    text-align: center;
+}
+.shiping > img {
+    display: block;
+    margin: auto;
+    width:60px;
+    height:30%;
+    margin-top: 30px;
+}
+.shiping > img + p {
+    text-align: center;
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+.cod > img + p{
+    text-align: center;
+    margin: 0px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.cash{
+    display: block;
+    margin: auto;
+    width: 60px;
+    margin-top: 20px;
+    height:40%
+}
+.contact{
+    /* border:1px solid black; */
+    width:50%;
+    height:98%
+}
+.contact > p{
+    text-align:center;
+    margin-top: 40px;
+}
+
+.payment{
+    /* border: solid 1px black; */
+    height: 100%;
+    width:50%
+}
+.payment > p{
+    margin-left: 50px;
+}
+
+.sec{
+    height:30px
+}
+.s {
+    display: flex;
+}
+.s > div + div >p{
+    color: green;
+    margin-top: -0.5px;
+    padding-left: 10px;
+}
+.card > div >img {
+    height:25px
+}
+.card {
+    margin-left:50px ;
+    margin-top: 30px;
+    display: flex;
+    gap:15px
+}
+.certificate {
+    /* border: solid 1px black; */
+    height: 100%;
+    width:50%;
+    display:flex;
+    gap:5px
+}
+.a {
+    height:100%;
+    /* border:1px solid black; */
+    width: 170px;
+}
+.b {
+    height:100%;
+    /* border:1px solid black; */
+    width: 150px;
+}
+.c {
+    height:100%;
+    /* border:1px solid black; */
+    width: 150px;
+}
+.one {
+    height: 30%;
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+}
+.one + p{
+    text-align: center;
+    color: #777;
+}
+.third>div{
+    /* border: solid 1px black; */
+    width:35%;
+    height:auto
+}
+.useful {
+    margin-left: 50px;
+    margin-top: 20px;
+    /* border: solid 1px black; */
+    
+}
+.useful + div {
+    margin-top: 20px;
+}
+.useful + div + div {
+    margin-top: 20px;
+}
+.award {
+    height:50%;
+    margin-top: 10px;
+    padding-left: 80px;
+}
+#third > div > p {
+    color: #777;
+}
+#third > div > p:hover {
+color: #00afef;
+cursor: pointer;
+}
+.social{
+    /* border:solid 1px black; */
+    width:100%;
+    height:50%
+}
+.media{
+    /* border: 1px solid black; */
+    width:100%;
+    height: 50%;
+    display:flex;
+    gap:20px;
+
+}
+.social > div > p{
+    text-align: center;
+}
+.media > div {
+    text-align: center;
+    /* margin-top: 10px; */
+    display: flex;
+    margin: auto;
+    gap:15px;
+    margin-top: -10px;
+    
+    
+}
+#fifth > p{
+    text-align: center;
+    color: #777;
+}
