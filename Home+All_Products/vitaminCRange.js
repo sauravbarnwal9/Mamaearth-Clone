@@ -54,7 +54,7 @@ var container=document.querySelector(".product-container-content2");
 
      function addtocart(elem){
         vitaminCRangearr.push(elem);
-       localStorage.setItem("addme",JSON.stringify(vitaminCRangearr));
+       localStorage.setItem("cart",JSON.stringify(vitaminCRangearr));
        alert("Product Has been added successfully")
      }
  function pricesort(vitaminCRange){

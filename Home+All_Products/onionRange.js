@@ -51,7 +51,7 @@ var container=document.querySelector(".product-container-content1");
 
      function addtocart(elem){
         onionRangearr.push(elem);
-       localStorage.setItem("addme",JSON.stringify(onionRangearr));
+       localStorage.setItem("cart",JSON.stringify(onionRangearr));
        alert("Product Has been added successfully")
      }
  function pricesort(onionRange){

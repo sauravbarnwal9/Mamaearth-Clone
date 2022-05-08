@@ -307,7 +307,7 @@ var container=document.querySelector(".product-container-content");
 
      function addtocart(elem){
     bestSellerarr.push(elem);
-       localStorage.setItem("addme",JSON.stringify(bestSellerarr));
+       localStorage.setItem("cart",JSON.stringify(bestSellerarr));
        alert("Product Has been added successfully")
      }
  function pricesort(bestSeller){

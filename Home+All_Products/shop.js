@@ -519,7 +519,7 @@ var container=document.querySelector(".shop-container");
 
      function addtocart(elem){
         shoparr.push(elem);
-       localStorage.setItem("addme",JSON.stringify(shoparr));
+       localStorage.setItem("cart",JSON.stringify(shoparr));
        alert("Product Has been added successfully")
      }
  function pricesort(shop){

@@ -304,7 +304,7 @@ var disc=0;
             document.querySelector(".tp_vam_4").textContent="₹"+tp;
         }
     
-         else if(C=="masai30"&&count>=1){
+         else if(C=="MasaiWeb"&&count>=1){
             count++;
             alert("Coupon Code can only be applied once")
            

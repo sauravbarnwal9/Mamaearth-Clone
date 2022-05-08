@@ -51,6 +51,8 @@ var container=document.querySelector(".product-container-content4");
 
      function addtocart(elem){
         hairCarearr.push(elem);
-       localStorage.setItem("addme",JSON.stringify(hairCarearr));
+       localStorage.setItem("cart",JSON.stringify(hairCarearr));
        alert("Product Has been added successfully")
      }
+
+  

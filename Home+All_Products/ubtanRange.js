@@ -51,7 +51,7 @@ var container=document.querySelector(".product-container-content3");
 
      function addtocart(elem){
         ubtanRangearr.push(elem);
-       localStorage.setItem("addme",JSON.stringify(ubtanRangearr));
+       localStorage.setItem("cart",JSON.stringify(ubtanRangearr));
        alert("Product Has been added successfully")
      }
  function pricesort(ubtanRange){
