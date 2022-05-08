@@ -11,7 +11,8 @@
     <script src="https://kit.fontawesome.com/22064d7ea4.js" crossorigin="anonymous"></script>
     
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <title>Body</title>
+    <title>Mamaearth | Official Website | Buy Natural Skin Care Product Online</title>
+    <link rel="shortcut icon" href="https://cdn.shopper.com/images/store-logos/Mamaearth-1628833248003.png" type="image/x-icon">
 </head>
 <body>
       <!-- Navbar Section starts from here!-->
@@ -41,17 +42,17 @@
             <div class="nav-user">
                 <div class="cart-user">
                     <i class="fa-solid fa-cart-arrow-down"></i>
-                    <a href="/">Cart</a>
+                    <a href="/MoonEarth/cart.section/cart.html">Cart</a>
                 </div>
                 <div class="login-user">
                     <i class="fa-solid fa-user fa-solid"></i>
-                    <div class="btn-login"><a href="">Login</a>
+                    <div class="btn-login"><a href="/MoonEarth/signup/signup.html">Signup</a>
                     <ul class="user-hover-login">
-                        <li><a href="">Your Profile</a></li>
-                        <li><a href="">Your Order</a></li>
+                        <li><a href="/MoonEarth/signup/yourProfile.html">Your Profile</a></li>
+                        <li><a href="/MoonEarth/signup/yourOrders.html">Your Order</a></li>
                         <li><a href="">Manage Address</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href=""><button class="login-button">Login</button></a></li>
+                        <li><a href="/MoonEarth/signup/contact.html">Contact Us</a></li>
+                        <li><a href="/MoonEarth/signup/login.html"><button class="login-button">Login</button></a></li>
                     </ul>
                     </div>
                 </div>
@@ -63,11 +64,11 @@
         <div class="user-category-container">
             <ul class="user-category">
                 <!-- add class active which page you want to redirect -->
-                <li class="category"><a   href="">HOME</a></li>
+                <li class="category"><a   href="/MoonEarth/Home+All_Products/index.html">HOME</a></li>
                 <!-- ................................................ -->
 
                 <!-- BABY -->
-                <li class="category"><a href="">BABY</a>
+                <li class="category"><a href="/MoonEarth/baby+beauty/baby.html">BABY</a>
                     <div class="user-hover-list">
                         <div>
                             <p>Explore</p>
@@ -85,13 +86,13 @@
                             <a href="">Baby Bath</a>
                         </div>
                         <div>
-                            <a href="">SEE ALL</a>
+                            <a href="/MoonEarth/baby+beauty/baby.html">SEE ALL</a>
                         </div>
                     </div>
                 </li>
 
                 <!-- BEAUTY -->
-                <li class="category"><a href="">BEAUTY</a>
+                <li class="category"><a href="/MoonEarth/baby+beauty/beauty.html">BEAUTY</a>
                     <div class="user-hover-list">
                         <div>
                             <p>Explore</p>
@@ -107,13 +108,13 @@
                             <a href="">Body</a>
                         </div>
                         <div>
-                            <a href="">SEE ALL</a>
+                            <a href="/MoonEarth/baby+beauty/beauty.html">SEE ALL</a>
                         </div>
                     </div>
                 </li>
 
                 <!-- HAIR -->
-                <li class="category"><a href="">HAIR</a>
+                <li class="category"><a href="/MoonEarth/face & hair/hair.html">HAIR</a>
                     <div class="user-hover-list">
                         <div>
                             <p>Explore</p>
@@ -131,13 +132,13 @@
                             <a href="">Hair Serum</a>
                         </div>
                         <div>
-                            <a href="">SEE ALL</a>
+                            <a href="/MoonEarth/face & hair/hair.html">SEE ALL</a>
                         </div>
                     </div>
                 </li>
 
                 <!-- FACE -->
-                <li class="category"><a href="">FACE</a>
+                <li class="category"><a href="/MoonEarth/face & hair/face.html">FACE</a>
                     <div class="user-hover-list">
                         <div>
                             <p>Explore</p>
@@ -159,7 +160,7 @@
                             <a href="">Face Moisturiser</a>
                         </div>
                         <div>
-                            <a href="">SEE ALL</a>
+                            <a href="/MoonEarth/face & hair/face.html">SEE ALL</a>
                         </div>
                     </div>
                 </li>
@@ -182,15 +183,15 @@
                             <a href="">Body Lotion</a>
                         </div>
                         <div>
-                            <a href="">SEE ALL</a>
+                            <a href="/MoonEarth/giftpacks/body.html">SEE ALL</a>
                         </div>
                     </div>
                 </li>
                 <li class="category"><a href="gift.html">GIFT PACKS</a></li>
                 <li class="category"><a href="">ALL PRODUCTS</a></li>
-                <li class="category"><a href="">BLOG</a></li>
-                <li class="category"><a href="">PLANT GOODNESS</a></li>
-                <li class="category"><a href="">STORE LOCATOR</a></li>
+                <li class="category"><a href="/MoonEarth/Blog/code.html">BLOG</a></li>
+                <li class="category"><a href="/MoonEarth/PlantGoodness/plantGoodness.html">PLANT GOODNESS</a></li>
+                <li class="category"><a href="/MoonEarth/Blog/code.html">STORE LOCATOR</a></li>
             </ul>
         </div>
         <!-- page route Navbar section end here! -->
@@ -263,7 +264,7 @@
             </div>
             <div class="contact">
                  <p>Have Queries or Concerns?</p>
-                 <button>CONTACT US</button>
+                <a href="/MoonEarth/signup/contact.html"> <button>CONTACT US</button></a>
             </div>
         </div>
         <div id="second">
@@ -539,7 +540,7 @@ var container=document.querySelector("#container");
 
      function addtocart(elem){
     bodyarr.push(elem);
-       localStorage.setItem("addme",JSON.stringify(bodyarr));
+       localStorage.setItem("cart",JSON.stringify(bodyarr));
        alert("Product Has been added successfully")
      }
  function pricesort(giftPacks){
