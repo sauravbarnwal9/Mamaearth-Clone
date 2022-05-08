@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css"/>
+   
+</head>
+<body>
+
+    <div id="main-box">
+            <!-- for top heading -->
+        <div id="login-start">Sign up to get Started</div>
+
+        <!-- for logo and text -->
+        <div id="login-intro">
+            <img src="https://mamaearth.in/static/mamaearth/login.svg"/ >
+            <span>
+                Get access to your orders, track
+                <br>
+                previous order & Redeem Mama
+                <br>
+                Cash
+            </span>
+        </div>
+
+        <!-- for input part -->
+        <form>
+           
+            <input id ="useremail" placeholder="Email" type="text" required>
+            <input id ="password" placeholder="password" required>
+            <input id ="submit" type="submit"  value="submit">
+        </form>
+
+        <!-- for terms an condition -->
+        <div id="condition">
+            By continuing, you agree to mamaearth's
+            <span>
+                <a href="terms.html">Terms And conditions</a>
+            </span>
+            and
+            <span>
+                <a href="privacy.html">Privacy Policy</a>
+            </span>
+        </div>
+    
+    </div>
+   
+
+</body>
+</html>
+
+<script>
+
+    var form= document.querySelector("form");
+
+    // catch the data from localStorage
+    var userData2= JSON.parse(localStorage.getItem("userData"));
+
+    
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var Data={
+            email: form.useremail.value,
+            password: form.password.value,
+        }
+        
+        // conditions for user 
+        if(userData2===null){
+            alert("Please create an account");
+        }
+        else if(userData2.email==Data.email && userData2.password==Data.password){
+            alert("SignIn Successful");
+            localStorage.setItem("nextStep", JSON.stringify(userData2)) 
+            window.location.href="navbar.html";
+        }
+        else
+        {
+            alert("User Doesn't Exist");
+        }        
+        window.location.href="yourOrders.html"
+    })
+
+</script>

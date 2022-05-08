@@ -1,0 +1,28 @@
+
+h1{
+    text-align: center;
+    margin:30px 0px 10px 100px;
+}
+#container{
+    width:40%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   display:flex;
+   /* height:400px; */
+}
+
+img{
+    margin-top: 10px;
+    margin-left: 70px;
+    width:200px
+}
+
+h3{
+    margin-left: 70px;
+    text-align: center;
+}
+p{
+    margin-left: 70px;
+    text-align: center;
+}
+
