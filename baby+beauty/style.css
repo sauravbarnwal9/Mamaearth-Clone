@@ -1,0 +1,225 @@
+*{
+    margin: 0px;
+    padding: opx;
+}
+
+#container{
+    height: auto;
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,415px);
+    gap: 20px;
+    /* border: 1px solid red; */
+    margin-top: 50px;
+    overflow: auto;
+}
+#container>div{
+    /* border: 1px solid red; */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#container>div>p{
+    text-align: center;
+    margin-top: 2px;
+    display: block;
+    
+}
+
+#container>div>button{
+    width: 80%;
+    height: 45px;
+    border-color:rgb(14, 139, 189) ;
+    margin-bottom: 20px;
+    display: block;
+    margin: auto;
+    background-color: white;
+    color: rgb(14, 139, 189);
+    align-items: flex-end;
+
+}
+
+#container>div>button:hover{
+    background-color: rgb(14, 139, 189);
+    color: white;
+}
+
+#container>div>h4{
+    text-align: center;
+    margin-top: 2px;
+    font-size: 18px;
+    color: rgb(9, 128, 9);
+}
+#container>div>img{
+    /* border: 1px solid red; */
+    width:100%;
+    height:200px;
+}
+
+body>.carousel-cell {
+width: 100%;
+margin-top: 20px;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* cell number */
+.carousel-cell:before {
+display: block;
+}
+
+body>#second>div>h2,p{
+    text-align: center;
+    /* display: block;
+    margin: auto; */
+    margin-top: 30px;
+}
+
+
+
+
+body { font-family: sans-serif; }
+
+.carousel_12 {
+  background: #EEE;
+}
+
+.carousel-cell_1 {
+  width: 30%;
+  height: 400px;
+  margin-right: 30px;
+  background:white;
+  border-radius: 5px;
+  border: 1px solid rgb(119, 190, 218);
+  /* counter-increment: carousel-cell; */
+  border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* .carousel-cell_1.is-selected {
+  background: #ED2;
+} */
+
+/* cell number */
+.carousel-cell_1:before {
+  display: block;
+  /* text-align: center; */
+  /* content: counter(carousel-cell); */
+  /* line-height: 200px;
+  font-size: 80px; */
+  color: white;
+  
+}
+#second1{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    margin-top: 40px;
+}
+
+
+/* .carousel12.carousel-cell_1>img{
+    width: 35%;
+    height:30%
+} */
+.carousel-cell_1>img{
+    
+    width: 100%;
+    height: 200px;
+}
+
+.carousel-cell_1>p{
+   margin-top: 5px;
+}
+
+.carousel-cell_1>button{
+    height: 45px;
+    width: 100%;
+    margin-top:auto;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(10, 118, 160);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    display: block;
+    margin: auto;
+    
+}
+
+.carousel-cell_1>button:hover{
+    background-color: rgb(14, 139, 189);
+    color: white;
+}
+.carousel-cell_1>h4{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(9, 128, 9);
+    font-weight:500;
+ }
+ #second>#best{
+     margin-top: 80px;
+ }
+ div>a{
+     color: rgb(63, 162, 201);
+     margin-left: 50px;
+ 
+     font-size: 15px;
+     cursor: pointer;
+     margin-top: auto;
+ }
+ div>a:nth-child(2){
+     color:teal;
+    margin-left: -1px;
+ }
+ h3{
+     font-weight: 600;
+    text-align: center;
+ }
+ h2{
+     font-size: 20px;
+     font-weight: 600;
+ }
+ #Detail{
+     height: 510px;
+     width:80%;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: 500px;
+     border: 1px solid white;
+     margin-top: 40px;
+     margin: auto;
+     overflow: auto;
+ }
+ #Detail>div{
+     border: 1px solid white;
+     
+ }
+ #Detail>div>img{
+     height: 250px;
+     width:50%;
+     display: block;
+     margin: auto;
+     margin-top: 40px;
+ }
+ /* #container>div>p:nth-child(2){
+     margin-top: -200px;
+     position: absolute;
+     background-color: rgb(197, 28, 64);
+     color: white;
+     font-size: 13px;
+     height: 20px;
+ } */
+
+ #Detail>div>p{
+   margin-left: -80px;
+ }
+ body>select{
+    border: white;
+     display: block;
+     text-align: end;
+     margin-left: 85%;
+     font-weight: 700;
+     font-size: 20px;
+     color: rgb(41, 141, 180);
+}
