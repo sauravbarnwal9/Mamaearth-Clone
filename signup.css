@@ -1,0 +1,77 @@
+*{
+    font-family: calibri;
+}
+
+
+
+/* heading */
+#login-start{
+    padding: 19px 0px 30px;
+    font-size: 22px;
+    color: #00AEEF;
+    text-align: center;
+}
+
+/* main -div */
+#main-box{
+    margin: auto;
+    margin-top: 2.5%;
+    width:33%;
+    height: 560px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    background-color: white;
+    /* text-align: center; */
+}
+
+
+/* login-intro -css */
+#login-intro{
+    display: flex;
+    margin-left: 21px;
+}
+
+#login-intro > img{
+    width: 70px;
+    height: 75px;
+    padding: 0px 30px 0px ;
+}
+
+#login-intro > span{
+    font-size: 17px;
+    color: #707070;
+}
+
+/* form css */
+form{
+     padding-left:60px;
+    padding-top: 20px;
+    row-gap: 20px;
+    display:grid;
+    grid-template-columns: 80%;
+    grid-template-rows: repeat(5,40px);
+}
+
+#submit{
+    background-color: #00AEEF;
+    border: 0px;
+    font-size: 17px;
+    color: white;
+}
+
+/* condition & anchor */
+#condition{
+    width: 80%;
+    margin: auto;
+}
+
+a{
+    color: #00AEEF;
+}
+
+/* for guest user */
+#condition+div {
+    margin-top: 25px;
+    margin-left: 20%;
+    font-size: 19px;
+} 

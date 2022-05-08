@@ -1,0 +1,119 @@
+body{
+    margin:0px
+}
+#box {
+width: 100%;
+height:150px;
+ /* border: solid 1px #777;  */
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+position: sticky;
+top: 0px;
+background-color: white;
+
+
+}
+
+
+.box1{
+display: block;
+margin-left: 100px;
+}
+.box1 + div {
+display: flex;
+gap : 25px;
+margin-top: 40px;
+margin-left: 400px;
+}
+.box2>div {
+color: #777;
+}
+.box2>div:hover{
+color:skyblue;
+cursor: pointer;
+}
+
+
+
+#search{
+/* border: 1px solid red; */
+width:20%;
+margin-left: 1005px;
+margin-top: -150px;
+}
+
+
+.name{
+display: flex;
+gap:20px
+}
+input{
+width: 100px;
+height:30px;
+background-color: rgb(245, 240, 240);
+padding-left: 10px;
+border-color: white;
+}
+button{
+height:40px;
+background-color:  rgb(53, 181, 231);
+color: white;
+border-color: white;
+width: 100px;
+margin-left:10px ;
+}
+div > p {
+color: #777;
+}
+.name > div > p:hover{
+color: rgb(151, 216, 241);
+cursor: pointer;
+text-decoration-line: underline;
+}
+button:hover{
+cursor: pointer;
+background-color: rgb(188, 222, 243);
+}
+h2+p{
+line-height: 25px
+}
+#contain {
+display:flex;
+ /* border:solid black 1px;  */
+margin-top: 50px;
+width:60%;
+margin-left: 100px;
+}
+.text {
+margin-left:30px ;
+}
+img{
+height:100% ;
+}
+#container > #contain{
+ margin-top: 50px; 
+}
+#main {
+margin-top: -200px;
+}
+#contain1 > button{
+    width:150px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    color: white;
+    background-color: rgb(218, 213, 213);
+}
+#contain1{
+    margin-left: 90px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    justify-content: space-between;
+    display: flex;
+    width:60%
+}
+#contain1 > button:hover{
+background-color: rgb(53, 181, 231);
+}
+a{
+    text-decoration: none;
+    color: white;
+}

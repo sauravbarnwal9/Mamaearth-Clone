@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="backendForm">
+        <input id="imgURL" type="text" placeholder="Enter Image URL" />
+        <input id="name" type="text" placeholder="Full Name" />
+        <input id="email" type="text" placeholder="Email" />
+        <input id="mobile" type="number" placeholder="Mobile" />
+        
+        <select name="" id="gender">
+            <option value="">Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <input id="dob" type="text" placeholder="DOB"/>
+        
+        <input type="submit" />
+      </form>
+</body>
+</html>
+
+<script>
+    document.querySelector("#backendForm").addEventListener("submit", backendFunction);
+
+
+  var userArr = JSON.parse(localStorage.getItem("userData"))||[]
+
+  function backendFunction() {
+    event.preventDefault();
+
+
+    var userObj = {
+      Img: backendForm.imgURL.value,
+      Name: backendForm.name.value,
+      Email: backendForm.email.value,
+      Mobile: backendForm.mobile.value,
+      Dob: backendForm.dob.value,
+    };
+    userArr.push(userObj);
+    console.log(userArr);
+
+  
+    localStorage.setItem("userData",JSON.stringify(userArr))
+    window.location.href="yourProfile.html"
+  }
+</script>

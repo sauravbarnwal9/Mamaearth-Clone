@@ -83,11 +83,7 @@ a{
     color: rgb(92, 92, 92);
     font-size: 18px;
     line-height: 30px;
-
     
-
-
-
 }
 .user-hover-login{
     align-items: center;
@@ -170,13 +166,26 @@ input:focus {
   	border: .5px solid rgba(0, 175, 239, .5);
 }
 
-button{
+.search-nav-btn{
     background-color: rgb(0, 175, 239);
     color: white;
     padding: 10px 15px;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
+    margin-left: -10px;
+}
+.search-nav-btn:hover{
+    background-color: rgb(0, 175, 239);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 0px;
     margin-left: -10px;
 }
 .user-category{
@@ -218,11 +227,7 @@ button{
 .category a{
     display: block;
     color: white;
-
     
-
-
-
 }
 .user-hover-list{
     position: absolute;
@@ -271,3 +276,4 @@ button{
 .user-hover-list>div>a:hover{
     color: rgb(0, 175, 239);
 }
+

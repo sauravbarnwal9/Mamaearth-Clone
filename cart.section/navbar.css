@@ -34,6 +34,7 @@ a{
 }
 .nav>img{
     max-width: 140px;
+   
 }
 .nav{
     display: flex;
@@ -83,11 +84,7 @@ a{
     color: rgb(92, 92, 92);
     font-size: 18px;
     line-height: 30px;
-
     
-
-
-
 }
 .user-hover-login{
     align-items: center;
@@ -208,21 +205,22 @@ button{
     position: fixed;
     top: 0;
     width: 100%;
+    visibility: visible;
+    opacity: 4s;
   }
   /* ........................ */
 
 .category{
+    
+    display: block;
     position: relative;
-    display: inline-block;
+    visibility: visible;
+
 }
 .category a{
     display: block;
     color: white;
-
     
-
-
-
 }
 .user-hover-list{
     position: absolute;

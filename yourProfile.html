@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="yourProfile.css"/>
+  </head>
+
+  <body>
+<h1><a href="profileBackend.html">Edit</a></h1>
+    <div id="container"></div>
+
+  </body>
+</html>
+
+<script>
+
+
+var userArr = JSON.parse(localStorage.getItem("userData"))||[]
+ 
+userArr.forEach(function(el) {
+  
+document.querySelector("#container").innerHTML=""
+  var box= document.createElement("div");
+
+var profileImg= document.createElement("img");
+profileImg.setAttribute("src", el.Img)
+
+var profileName= document.createElement("h3");
+profileName.innerText = el.Name;
+
+var profileEmail= document.createElement("p");
+profileEmail.innerText = el.Email;
+
+var profileMobile= document.createElement("p");
+profileMobile.innerText = el.Mobile;
+
+var profileDob = document.createElement("p");
+profileDob.innerText = el.Dob;
+
+box.append(profileImg,profileName,profileEmail,profileMobile,profileDob);
+
+document.querySelector("#container").append(box);
+
+});  
+
+
+</script>

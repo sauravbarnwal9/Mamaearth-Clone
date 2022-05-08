@@ -1,71 +1,45 @@
-
 #container1{
-
-#container{
-
-    border:1px solid #777;
+    /* border:1px solid #777; */
     width:85%;
     height:auto;
     margin: auto;
     border-width:thin
 }
-
-#first1{
-
 #first{
-
-    border: thin 0.5px #777;
+    /* border: thin 0.5px #777; */
     height:auto;
     display:flex;
     border-width:thin
 
 
 }
-
-#second1{
-
 #second{
-
-    border: solid 0.5px #777;
+    /* border: solid 0.5px #777; */
     height:130px;
     display: flex;
     border-width: thin;
 }
-
-#third1{
-
 #third{
-    border:  1px #777;
+    /* border:  1px #777; */
     height:400px;
     display:flex;
     gap:150px;
     border-width: thin;
     
 }
-
-#fourth1{
-    border: solid 0.1px #777;
-    height:80px;
-}
-#fifth1 {
-
 #fourth{
-    border: solid 0.1px #777;
+    /* border: solid 0.1px #777; */
     height:80px;
 }
 #fifth {
-
-    border: thin 0.5px #777;
+    /* border: thin 0.5px #777; */
     height:50px;
 }
 .shiping{
-     border: solid #777 0.5px; 
+     /* border: solid #777 0.5px;  */
     width: 25%;
     height:150px;
-
-    
-    margin-top: ;
-
+    /* margin-top: 20px; */
     
 }
 .cod{
@@ -115,11 +89,7 @@ img+p+p {
     text-align:center;
     margin-top: 40px;
 }
-
-.contact > button{
-
-button{
-
+#bb{
     display: block;
     margin: auto;
     background-color: white;
@@ -130,12 +100,6 @@ button{
     padding-top: 10px;
     padding-bottom: 10px;
     border-color: #00afef;
-
-    margin-top: 10px;
-    border-width: 1px;
-}
-.contact > button:hover{
-
 }
 button:hover{
     background-color: #00afef;
@@ -182,11 +146,7 @@ p + div {
     display:flex;
     gap:5px
 }
-
-.a1 {
-
 .a {
-
     height:100%;
     /* border:1px solid black; */
     width: 170px;
@@ -211,11 +171,7 @@ p + div {
     text-align: center;
     color: #777;
 }
-
-.third1>div{
-
 .third>div{
-
     /* border: solid 1px black; */
     width:35%;
     height:auto
@@ -237,17 +193,10 @@ p + div {
     margin-top: 10px;
     padding-left: 80px;
 }
-
-#third1 > div > p {
-    color: #777;
-}
-#third1 > div > p:hover {
-
 #third > div > p {
     color: #777;
 }
 #third > div > p:hover {
-
 color: #00afef;
 cursor: pointer;
 }
@@ -277,12 +226,7 @@ cursor: pointer;
     
     
 }
-
-#fifth1 > p{
-
 #fifth > p{
-
     text-align: center;
-    color: #777;
+    /* color: #777; */
 }
-

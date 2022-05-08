@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css"/>
+   
+</head>
+<body>
+
+    <div id="main-box">
+            <!-- for top heading -->
+        <div id="login-start">Sign up to get Started</div>
+
+        <!-- for logo and text -->
+        <div id="login-intro">
+            <img src="https://mamaearth.in/static/mamaearth/login.svg" />
+            <span>
+                Get access to your orders, track
+                <br>
+                previous order & Redeem Mama
+                <br>
+                Cash
+            </span>
+        </div>
+
+        <!-- for input part -->
+        <form>
+            <input id ="username" placeholder="Full Name" type="text" required>
+            <input id ="useremail" placeholder="Email" type="text" required>
+            <input id ="password" placeholder="password" required>
+            <input id ="submit" type="submit"  value="submit">
+        </form>
+
+        <!-- for terms an condition -->
+        <div id="condition">
+            By continuing, you agree to mamaearth's
+            <span>
+                <a href="terms.html">Terms And conditions</a>
+            </span>
+            and
+            <span>
+                <a href="privacy.html">Privacy Policy</a>
+            </span>
+        </div>
+
+        <div>All ready have an account?<a href="login.html">Log In</a></div>
+    
+    </div>
+   
+
+</body>
+</html>
+
+<script>
+   
+    var form= document.querySelector("form");
+
+    // write a function to catch all values
+    form.addEventListener("submit", function(event){
+        event.preventDefault();
+        var Data={
+            username: form.username.value,
+            email: form.useremail.value,
+            password: form.password.value,
+        }
+        
+        // store in localStorage
+        localStorage.setItem("userData", JSON.stringify(Data));
+        alert("😊 Sign Up successfully")
+
+    })
+
+</script>
