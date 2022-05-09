@@ -206,7 +206,7 @@ console.log("rohano")
     var div1 = document.createElement("div");
     div1.setAttribute("id","img_div");
     var image= document.createElement("img");
-    image.src=element.image_url;
+    image.src=element.img;
     
    
     
@@ -215,7 +215,7 @@ console.log("rohano")
      div2.setAttribute("id","desc-div");
     
      let description = document.createElement("p");
-    description.innerText=element.name;
+    description.innerText=element.title;
     description.setAttribute("id","descrription")
     
     var div3 = document.createElement("div");
@@ -272,7 +272,7 @@ tp=cart_arr.reduce(function(ac,cv){
     return ac + Number(cv.price);
 },0)
 wd=cart_arr.reduce(function(ac,cv){
-    return ac + Number(cv.strikedoffprice);
+    return ac + Number(cv.price);
 },0)
 localStorage.setItem("total_price",tp);
 localStorage.setItem("WithoutDiscount",wd)
@@ -290,7 +290,7 @@ var disc=0;
         //console.log("cli");
        
         var C=document.querySelector(".coup_vam_4").value;
-        if(C=="Masai30"&&count==0){
+        if(C=="MasaiWeb"&&count==0){
             count++;
             alert("Coupon Code Applied")
             cd=Math.ceil(0.3*tp);
