@@ -206,8 +206,8 @@ console.log("rohano")
     var div1 = document.createElement("div");
     div1.setAttribute("id","img_div");
     var image= document.createElement("img");
-    image.src=element.image_url;
-    
+    image.src=element.img;
+
    
     
     
@@ -215,7 +215,8 @@ console.log("rohano")
      div2.setAttribute("id","desc-div");
     
      let description = document.createElement("p");
-    description.innerText=element.name;
+    description.innerText=element.title;
+  
     description.setAttribute("id","descrription")
     
     var div3 = document.createElement("div");
@@ -259,7 +260,7 @@ console.log("rohano")
 
    function deleteItem(index){
       cart_arr.splice(index,1);
-    localStorage.setItem("cartdata",JSON.stringify(cart_arr));
+    localStorage.setItem("cart",JSON.stringify(cart_arr));
     appendcartItems(cart_arr)
     
    
@@ -272,7 +273,7 @@ tp=cart_arr.reduce(function(ac,cv){
     return ac + Number(cv.price);
 },0)
 wd=cart_arr.reduce(function(ac,cv){
-    return ac + Number(cv.strikedoffprice);
+    return ac + Number(cv.price);
 },0)
 localStorage.setItem("total_price",tp);
 localStorage.setItem("WithoutDiscount",wd)
@@ -327,7 +328,7 @@ var disc=0;
 
     }
     else{
-        document.querySelector(".ship_vam_4").textContent=40;
+        document.querySelector(".ship_vam_4").textContent="₹40";
         disc+=40;
 
     }
