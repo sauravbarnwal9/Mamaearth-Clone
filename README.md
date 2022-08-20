@@ -27,7 +27,7 @@ Mamaearth is one of the most trustworthy brands in India. It offers the best-in-
 ### Checkout Page
 ![](https://i.ibb.co/g9vnMvJ/Screenshot-745.png)
 
-### Sign up Page
+####Sign up Page
 ![](https://i.ibb.co/kH9NXZ5/Screenshot-746.png)
 
 
