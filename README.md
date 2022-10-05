@@ -36,13 +36,13 @@ Mamaearth is one of the most trustworthy brands in India. It offers the best-in-
 ## [Getting Started]
 
 ### Execution..
-Want to run in your local Machine? Great!
+Want to run in your local Machine ? Great!
 
 To run, follow these steps:
 
 - Clone my repository `https://github.com/sauravbarnwal9/MamaEarth.git`
 - Open that code in your VS code `Project Files/index.html`
-- Open the `index.html` on Live server
+- Open the `index.html` in Live server
 - Then you can Navigate through other pages from Home page like `Body.html`, `Cart.html` etc
 
 ## Built with 
