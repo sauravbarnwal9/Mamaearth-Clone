@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face</title>
+    <style>
+        img {
+            border-radius: 5px;
+            position: relative;
+            width: 100%;
+        }
+        #main {
+            text-align: center;
+            margin-bottom: 40px;
+            text-align: center;
+            color: rgb(29, 29, 29);
+            font-size: 27px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat (20,auto);
+            gap:10px;
+            width:90%;
+            margin:auto;
+            background-color:white;
+
+        }
+        #SortBy {
+            padding: 10px 14px;
+            text-decoration: none;
+            display: block;
+            line-height: 1.62;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(0, 175, 239);
+            text-align: center;
+            border:rgb(0, 175, 239);
+        }
+        :hover select {
+            text-align: center;
+            color: rgb(0, 175, 239);
+            background-color:white;
+        }
+        body>div {
+            display:flex;
+            justify-content: space-between;
+            width:100%;
+            margin:auto;
+        }
+        .product > h3 {
+            /* margin-left: ; */
+            margin-bottom: 10px;
+            color: rgb(29, 29, 29);
+            font-size: 20px;
+            font-weight: 600;
+            box-sizing: inherit;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        img {
+            border-radius: 5px;
+            width:100%;
+            position:relative;
+        }
+        #container > div {
+            display:flex;
+            border:.1px solid rgb(221, 217, 217);
+            flex-direction: column;
+            align-items: left;
+            justify-content: center;
+            text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            position: relative;
+        }
+        #container > div > div {
+            display: flex;
+            flex-direction: row;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: initial;
+            align-items: initial;
+            justify-content: space-between;
+            width:50%;
+            margin:auto;
+        }
+        #container > div > div > div {
+            display: flex;
+            flex-direction: row;
+            flex-flow: row wrap;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: initial;
+            align-items: initial;
+            width:100%;
+            margin: auto;
+        }
+        #container > div > div > div > h1 {
+            color: rgb(29, 29, 29);
+            font-size: 25px;
+            font-weight: bold;
+            margin: 5px 4px;
+            font-size: 1.25rem;
+            color: rgb(29, 29, 29);
+            font-size: 17px;
+            font-weight: bold;
+            margin: 0px 4px;
+        }
+        #container > div > div > img { 
+            width:8%;
+        }
+        button {
+            border-radius: 5px;
+            padding: 15px 50px 15px 50px;
+            background-color: white;
+            margin: auto;
+            border:.5px solid rgb(143, 143, 245);
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            color: rgb(0, 175, 239);
+            align-items: center;
+            font-weight: bold;
+        }
+        :hover > button {
+            background-color:rgb(44, 179, 233);
+            color:white;
+        }
+        h2 {
+            text-align: center;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            font-size: 1rem;
+            min-height: 3.5rem;
+            font-weight: 400;
+            padding: 0px 0.8em;
+            margin: 0.8em 0px 0.2em;
+            color: rgb(51, 51, 51);
+        }
+        h3 {
+            margin-top: 10px;
+            color: rgb(75, 139, 11);
+            text-align: center;
+            min-height: 24px;
+            font-size: 14px;
+            box-sizing: inherit;
+        }
+        .product {
+            width: 90%;
+        }
+        #faq {
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        #text1{
+            width:60%;
+            padding: 10px 14px;
+            text-decoration: none;
+            line-height: 1.62;
+            font-size: 16px;
+            width: 100%;
+            border: none;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        #container1 {
+            border: solid rgb(230, 230, 230) 0.5px; 
+            width:85%;
+            height:auto;
+            margin: 30px auto;
+            border-width:thin;
+            display:block;
+        }
+        #first {
+            border: solid rgb(230, 230, 230) 0.5px; 
+            height:auto;
+            display:flex;
+            border-width:thin;
+        }
+        .shiping > img {
+            display: block;
+            margin: auto;
+            width:60px;
+            height:30%;
+            margin-top: 30px;
+        }
+        .shiping > img + p {
+            text-align: center;
+            margin: 0px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        .cod {
+            width: 20%;
+            height: 90%;
+        }
+        .cod > img + p{
+            text-align: center;
+            margin: 0px;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+        img+p+p {
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            color: #777;
+        }
+        .cash{
+            display: block;
+            margin: auto;
+            width: 60px;
+            margin-top: 20px;
+            height:40%
+        }
+        .contact{
+            /* border:1px solid black; */
+            width:50%;
+            height:98%
+        }
+        .contact > p{
+            text-align:center;
+            margin-top: 40px;
+        }
+        button{
+            display: block;
+            margin: auto;
+            background-color: white;
+            color: #00afef;
+            border-radius: 5px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-color: #00afef;
+        }
+        button:hover{
+            background-color: #00afef;
+            color: white;
+        }
+        #second {
+            border: solid rgb(230, 230, 230) 0.5px; 
+            height:130px;
+            display: flex;
+            border-width: thin;
+        }
+        .payment {
+            width: 100%;
+        }
+        .payment > p{
+            margin-left: 50px;
+        }
+        p + div {
+            display: block;
+            margin-left: 50px;
+            height:10px;
+        }
+        .sec{
+            height:30px
+        }
+        .s {
+            display: flex;
+        }
+        .s > div + div >p{
+            color: green;
+            margin-top: -0.5px;
+            padding-left: 10px;
+        }
+        .card > div >img {
+            height:25px
+        }
+        .card {
+            margin-left:50px ;
+            margin-top: 30px;
+            display: flex;
+            gap:15px
+        }
+        .certificate {
+            width:100%;
+            display:flex;
+            justify-content: space-between;
+        }
+        .a>img{
+            width: auto;
+        }
+        .b>img {
+            width: auto;
+        }
+        .c>img {
+            width: auto;
+        }
+        .one {
+            height: 30%;
+            display: flex;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .one + p{
+            text-align: center;
+            color: #777;
+        }
+        .third>div{
+            width:35%;
+            height:auto
+        }
+        .useful {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .useful + div {
+            margin-top: 20px;
+        }
+        .useful + div + div {
+            margin-top: 20px;
+        }
+        .award {
+            height:50%;
+            margin-top: 10px;
+            padding-left: 80px;
+        }
+        #third{
+            border:  1px #777;
+            display:flex;
+            width:100%;
+            border-width: thin;
+            justify-content: space-evenly;
+        }
+        .third>div{
+            width:35%;
+            height:auto
+        }
+        .useful {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .useful + div {
+            margin-top: 20px;
+        }
+        .useful + div + div {
+            margin-top: 20px;
+        }
+        .award {
+            height:50%;
+            margin-top: 10px;
+            padding-left: 80px;
+        }
+        #third > div > p {
+            color: #777;
+        }
+        #third > div > p:hover {
+        color: #00afef;
+        cursor: pointer;
+        }
+        .social{
+            width:100%;
+            height:50%
+        } 
+        .social > div > p{
+            text-align: center;
+        }
+        .awa {
+            width: 15%;
+            height: 470px;
+            margin-right: 50px;
+        }
+        #fourth{
+            border: solid rgb(230, 230, 230) 0.5px; 
+            height:80px;
+        }
+        #fifth {
+            border: solid rgb(230, 230, 230) 0.5px; 
+            height:50px;
+        }
+        #fifth > p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="https://images.ctfassets.net/66mrrren2unf/2hYli6cQUbDOpADydZluRa/2463b8bd7f03421be7e706244f15d365/Website_Banner.jpg?q=40" alt="MamaEarth">
+    </div>
+    <h1 id="main">Skin Care Product</h1>
+    <div class="product">
+        <h3>Our Product</h3>
+        <h3> 
+            <select id="SortBy" onChange="pricesort()">
+              <option ><span>Sort By</span></option>
+              <option value="Lowtohigh">Price-Low to High</option>
+              <option value="Hightolow">Price-High to Low</option>
+            </select>
+        </h3>
+    </div>
+    <div id="container">
+
+    </div>
+    <h1 id="faq">FAQ'S</h1>
+    <div id="fact">
+        <select id="text1">
+          <option value="text" id="green">How Do You Use Mamaearth Face Care Product?</option>
+          <option value="text">Start your day with Mamaearth Vitamin C Face Wash for naturally radiant skin; follow it up with Mamaearth Toner and massage your skin with Mamaearth Vitamin C Oil-Free Moisturizer for naturally glowing skin all day long.</option>
+        </select>
+        <select id="text1">
+          <option value="text" id="green">Are Mamaearth Skin care Products Natural?</option>
+          <option value="text">Yes, Mamaearth products for skin are made with the goodness of natural ingredients to enhance your skin’s health. The products are toxin-free, cruelty free and do not include any kind of Parabens, silicones, mineral oils or dyes.</option>
+        </select>
+        <select id="text1">
+          <option value="text" id="green">Do amaearth Face care Products Work on Old Acne Scar?</option>
+          <option value="text">Yes you can try Mamaearth Acne Marks Reduction Kit to fade away both new as well as old acne marks with the goodness of natural ingredients like Apple Cider Vinegar, Niacinamide, Neem, Glycerin &amp;amp; more. Mamaearth skin products have various products to treat acne, acne marks, dark spots, and many other skin issues.</option>
+        </select>
+    </div> 
+    <div id="container1">
+        <div id="first">
+            <div class="shiping">
+                <img src="https://mamaearthp.imgix.net/wysiwyg/delivery2x.png?auto=format">
+                <p>Free Shipping</p>
+                <p>On Orders Above Rs.399</p>
+            </div>
+            <div class="cod">
+                <img class="cash" src="https://mamaearthp.imgix.net/wysiwyg/Group_81512x.png?auto=format">
+                <p>COD Available</p>
+                <p>@ Rs. 40 Per Order</p>
+            </div>
+            <div class="contact">
+                 <p>Have Queries or Concerns?</p>
+                 <button>CONTACT US</button>
+            </div>
+        </div>
+        <div id="second">
+            <div class="payment">
+                <p>PAYMENT</p>
+                <div class="s">
+                    <div> <img class="sec" src="https://mamaearthp.imgix.net/wysiwyg/noun_trusted_27146262x_6Ekja92.png?auto=format"></div>
+                    <div>
+                        <p>100% Payment Protection, Easy Return Policy</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div><img src="https://mamaearthp.imgix.net/wysiwyg/visa2x.png?auto=format&fit=scale" ></div>
+                    <div><img src="https://mamaearthp.imgix.net/wysiwyg/master_card2x.png?auto=format&fit=scale" ></div>
+                    <div><img src="https://mamaearthp.imgix.net/wysiwyg/american_express2x.png?auto=format&fit=scale" ></div>
+                    <div><img src="https://mamaearthp.imgix.net/wysiwyg/rupay2x.png?auto=format&fit=scale" ></div>
+                    <div><img src="https://mamaearthp.imgix.net/wysiwyg/net_banking2x.png?auto=format&fit=scale" ></div>
+                </div> 
+            </div>
+            <div class="certificate">
+                <div class="a">
+                     <img class="one" src="https://mamaearthp.imgix.net/wysiwyg/dermatology-tested-100x1002x.png?auto=format" > 
+                     <p>Dermatologically Tested</p>
+
+                </div>
+                <div class="b">
+                    <img class="one" src="https://mamaearthp.imgix.net/wysiwyg/fda-100x1002x.png?auto=format" > 
+                     <p> FDA Approved
+                    </p>
+                </div>
+                <div class="c">
+                    <img class="one" src="https://mamaearthp.imgix.net/wysiwyg/MadeSafeImages13Jan/madesafe13janlogo.png?auto=format" > 
+                     <p>Made Safe Certified</p>
+                </div>
+            </div>
+        </div>
+        <div id="third">
+            <div class="useful">
+                <p1>USEFUL LINKS</p1>
+                <p>Privacy Policy</p>
+                <p>Returns</p>
+                <p>Terms & Conditions</p>
+                <p>Terms & Conditions - Cashback</p>
+                <p>FAQs</p>
+                <p>We're Safe</p>
+                <p>Track Order</p>
+                <p>Contact Us</p>
+                <p>Sitemap</p>
+                <p>AboutUs</p>
+
+            </div>
+            <div>
+                <p1>CATEGORIES</p1>
+                <p>Baby</p>
+                <p>Beauty</p>
+                <p>Hair</p>
+                <p>Face</p>
+                <p>Body</p>
+                <p>Gift Pack</p>
+            </div>
+            <div>
+                <p1>MY ACCOUNT</p1>
+                <p>Account</p>
+                <p>Order</p>
+                <p>Addresses</p>
+            </div>
+            <div class="awa">
+                <img class="award" src="https://mamaearthp.imgix.net/wysiwyg/Best-Brand500x5002x.png?auto=format">
+            </div>
+        </div>
+        <div id="fourth">
+            <div class="social">
+              <div>
+                  <p>SHOW US SOME LOVE ON SOCIAL MEDIA</p>
+
+              </div>
+            </div>
+        </div>
+        <div id="fifth">
+         <p>© 2022 Honasa Consumer Pvt. Ltd. All Rights Reserved</p>
+        </div>
+    </div>
+</body>
+</html>
+</body>
+</html>
+<script>
+   face = [
+    {img:"https://honasa-mamaearth-production.imgix.net/c/h/charcoal-face-wash-1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:249,
+    title:"Charcoal Facewash for oil control, 100ml",
+    subtitle:"Pollution Defense Formula | Controls Excess Oil",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|", 
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"256 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/t/e/tea-tree-face-wash-1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:249,
+    title:"Tea Tree Facewash for acne and pimples, 100ml",
+    subtitle:"Controls Acne & Pimples | Removes Excess Oil",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.7|", 
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"423 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/u/b/ubtan-face-wash_1_1_1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:249,
+    title:"Ubtan Face Wash with Turmeric & Saffron for Tan Removal – 100ml",
+    subtitle:"Removes Tan | Repairs Sun Damage | Brightens Skin",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|", 
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"905 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_1_1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:449,
+    title:"Bye Bye Blemishes Face Cream for Reducing Pigmentation and Blemishes with Mulberry Extract and Vitamin C -30ml",
+    subtitle:"Evens Skin Tone | Non-Greasy | Reduces Dark Spots",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|", 
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"461 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/b/y/bye_bye_blemishes_2_2.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:399,
+    title:"Bye Bye Dark Circles Eye Cream with Cucumber and Peptides for Dark Circles - 20ml",
+    subtitle:"Reduces Dark Circles | Nourishes Under Eye Skin",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|", 
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"292 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/s/k/skin-illuminate-face-serum-1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:599,
+    title:"Skin Illuminate Face Serum for Radiant Skin with Vitamin C and Turmeric - 30 g",
+    subtitle:"Highly Potent Vitamin C | Gives A Radiant Glow",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|",
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"237 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/s/k/skin-correct-face-serum-with-ingredient_1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:599,
+    title:"Skin Correct Face Serum with Niacinamide and Ginger Extract for Acne Marks and Scars - 30 ml",
+    subtitle:"Reduces Acne Marks | Minimizes Enalrged Pores",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.9|",
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"360 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/a/l/aloe_vera_gel_1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:299,
+    title:"Aloe Vera Gel for Skin and Hair - 300ml",
+    subtitle:"Hydrates Skin | Soothes Irritated Skin",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|",
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"304 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/v/i/vitamin_c_face_toner_1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:399,
+    title:"Vitamin C Face Toner with Vitamin C and Cucumber for Pore Tightening, 200 ml",
+    subtitle:"Tightens Open Pores | Restores Skin's pH Balance",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|",
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"145 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/u/b/ubtan_face_scrub_1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:244,
+    title:"Ubtan Face Scrub with Turmeric and Walnut for Tan Removal - 100g",
+    subtitle:"Removes Tan | Gently Exfoliates | Evens Skin Tone",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|",
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"117 Reviews",
+
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/c/h/charcoal_face_scrub_1.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:349,
+    title:"Charcoal Face Scrub For Oily Skin and Normal skin, with Charcoal and Walnut for Deep Exfoliation - 100g",
+    subtitle:"Gently Exfoliates| Removes Dead Skin",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.8|",
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"78 Reviews",
+},
+{
+    img:"https://honasa-mamaearth-production.imgix.net/v/i/vit_c_face_mask.jpg?auto=compress&fit=scale&w=400&h=400",
+    rate:"Rs.",
+    price:499,
+    title:"Vitamin C Face Mask With Vitamin C and Kaolin Clay for Skin Illumination - 100 g",
+    subtitle:"Illuminates Skin | Brightens | Evens Skin Tone",
+    img2:"https://mamaearth.in/static/mamaearth/star.svg",
+    rating:"4.9|",
+    img_url:"https://mamaearth.in/static/mamaearth/verified.svg",
+    review:"137 Reviews",
+},
+];
+localStorage.setItem("facedata",JSON.stringify(face));
+var facearr=JSON.parse(localStorage.getItem("facedata"))||[];
+
+var container=document.querySelector("#container");
+  function display(data){
+    container.innerHTML=null;
+    data.forEach(function (elem){
+      var box=document.createElement("div");
+      box.addEventListener("click",function(){
+        productdis(elem);
+     })
+      var avatar=document.createElement("img");
+      var name=document.createElement("h2");
+      var subname=document.createElement("h3");
+      var ratingbox=document.createElement("div")
+      var star=document.createElement("img");
+      var ratings=document.createElement("p");
+      var rightmark=document.createElement("img")
+      var reviws=document.createElement("p")
+      var pricebox=document.createElement("div")
+      var val=document.createElement("h1")
+      var price=document.createElement("h1");
+
+      pricebox.append(val,price)
+      console.log(pricebox)
+      ratingbox.append(star,ratings,rightmark,reviws)
+      var btn=document.createElement("button");
+      btn.innerText="ADD TO CART"
+       btn.addEventListener("click",function(){
+        addtocart(elem);
+     })
+     avatar.setAttribute("src",elem.img);
+     name.innerText=elem.title;
+     subname.innerText=elem.subtitle;
+     star.setAttribute("src",elem.img2);
+     ratings.innerText=elem.rating;
+     rightmark.setAttribute("src",elem.img_url)
+     reviws.innerText=elem.review;
+     val.innerText=elem.rate;
+     price.innerText=elem.price;
+
+     box.append(avatar,name,subname,ratingbox,pricebox,btn);
+     document.querySelector("#container").append(box);
+    })
+  }
+  display (face);
+  console.log(face)
+
+     function addtocart(elem){
+    facearr.push(elem);
+       localStorage.setItem("addme",JSON.stringify(facearr));
+       alert("Product has been added to cart")
+     }
+ function pricesort(face){
+   var selected=document.querySelector("#SortBy").value;
+   console.log(selected)
+
+
+   if(selected=="Lowtohigh"){
+     console.log("hi")
+    facearr.sort(function (a,b){
+      return a.price - b.price;
+    });
+      console.log(facearr)
+      display(facearr)
+  }
+    if(selected=="Hightolow"){
+    facearr.sort(function (a,b){
+      return b.price - a.price;
+    });
+    console.log(facearr)
+    display(facearr)
+
+   }
+  }
+</script>
